@@ -9,9 +9,16 @@ type FormActionsProps = {
   setAtivo: (value: boolean) => void;
   setDataDemissao: (value: string) => void;
   onCancel: () => void;
+  labelText?: string;
 };
 
-const FormActions = ({ ativo, setAtivo, setDataDemissao, onCancel }: FormActionsProps) => {
+const FormActions = ({ 
+  ativo, 
+  setAtivo, 
+  setDataDemissao, 
+  onCancel,
+  labelText = "Colaborador Ativo"
+}: FormActionsProps) => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between mt-8 pt-4 border-t border-gray-200">
       <div className="flex items-center space-x-3 mb-4 md:mb-0">
@@ -28,7 +35,7 @@ const FormActions = ({ ativo, setAtivo, setDataDemissao, onCancel }: FormActions
           htmlFor="ativo" 
           className="text-lg font-semibold text-gray-800 cursor-pointer select-none"
         >
-          Colaborador Ativo
+          {labelText}
         </Label>
       </div>
       

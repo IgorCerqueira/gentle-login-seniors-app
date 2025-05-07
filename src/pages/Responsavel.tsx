@@ -141,6 +141,7 @@ const Responsavel = () => {
                 setAtivo={setAtivo}
                 setDataDemissao={() => {}} // Não utilizado neste formulário
                 onCancel={handleCancel}
+                labelText="Responsável Ativo"
               />
             </form>
           </CardContent>
