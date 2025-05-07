@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import NavBar from "@/components/colaborador/NavBar";
-import FormActions from "@/components/colaborador/FormActions";
+import FormActions from "@/components/common/FormActions";
 import BackgroundEffect from "@/components/colaborador/BackgroundEffect";
 import { User, Calendar, ClipboardCheck, FileSignature, Phone } from "lucide-react";
 import { Label } from "@/components/ui/label";
@@ -142,6 +142,7 @@ const Responsavel = () => {
                 setDataDemissao={() => {}} // Não utilizado neste formulário
                 onCancel={handleCancel}
                 labelText="Responsável Ativo"
+                buttonText="Salvar Responsável"
               />
             </form>
           </CardContent>

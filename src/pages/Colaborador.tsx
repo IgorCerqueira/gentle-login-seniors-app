@@ -5,7 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import NavBar from "@/components/colaborador/NavBar";
 import DadosPessoais from "@/components/colaborador/DadosPessoais";
 import DadosProfissionais from "@/components/colaborador/DadosProfissionais";
-import FormActions from "@/components/colaborador/FormActions";
+import FormActions from "@/components/common/FormActions";
 import BackgroundEffect from "@/components/colaborador/BackgroundEffect";
 
 const Colaborador = () => {
@@ -115,6 +115,8 @@ const Colaborador = () => {
                 setAtivo={setAtivo}
                 setDataDemissao={setDataDemissao}
                 onCancel={handleCancel}
+                labelText="Colaborador Ativo"
+                buttonText="Salvar Colaborador"
               />
             </form>
           </CardContent>
